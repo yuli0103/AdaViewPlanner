@@ -446,7 +446,7 @@
               (Line 1) Rendering result of sampled frames；
               (Line 2) Rendered video in 3D space；
               (Line 3) Reprojection result of human motion from the generated camera viewpoint；
-              
+              <br><br>
               Compared with other methods (E.T. [1], DanceCam* [2]), our model generates smoother trajectories that better follow instructions, while also exhibiting a cinematographic style centered on human actions. <br><br>
               [1] Courant, Robin, et al. "ET the Exceptional Trajectories: Text-to-camera-trajectory generation with character awareness." European Conference on Computer Vision. Cham: Springer Nature Switzerland, 2024. <br><br>
               [2] Wang, Zixuan, et al. "Dancecamera3d: 3d camera movement synthesis with music and dance." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2024.
@@ -461,30 +461,41 @@
 
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Additional results</h2>
-        <div class="content">
-          
-          <!-- Method figure -->
-          <div class="method-figure">
-            <img src="static/images/vis_2.png" alt="Method Overview" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"/>
-          </div>
-          
-          <!-- Method description text -->
-          <div class="method-description has-text-justified" style="margin-top: 2rem;">
-            <p>
-              The results demonstrate the diversity of the generated trajectories and the model’s ability to follow camera text instructions.
-            </p>
-          </div>
-          
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Demos</h2>
+
+      <!-- 视频轮播部分 -->
+      <div id="results-video-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="showcase-video1" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/14.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="showcase-video2" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/13.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="showcase-video3" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/12.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
+
+      <!-- 固定在轮播下方的说明文字 -->
+      <div class="method-description has-text-centered" style="margin-top: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+        <p style="font-size: 1.05rem; line-height: 1.6;">
+          The results demonstrate the diversity of the generated trajectories and the model’s ability to follow camera text instructions.
+        </p>
+      </div>
+
     </div>
   </div>
 </section>
+    
 
 <section class="section">
   <div class="container is-max-desktop">
